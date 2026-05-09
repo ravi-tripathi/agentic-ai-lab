@@ -3,5 +3,5 @@ An exploration of LangChain basics using Google Gemini 2.5.
 
 ## Status
 - [x] Basic connectivity established.
-- [ ] Implementation of Prompt Templates.
-- [ ] Structured Output parsing.
+- [x] Implementation of Prompt Templates.
+- [x] Structured Output parsing.
