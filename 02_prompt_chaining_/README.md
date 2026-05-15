@@ -6,10 +6,15 @@ This project demonstrates how to link multiple LLM calls together using LangChai
 - **Output Parsers:** Using `StrOutputParser` to clean LLM responses for the next step.
 - **Sequential Logic:** How the output of one prompt serves as the context for the next.
 
+## Updates
+- [x] Improved ELI5 quality using **Few-Shot Prompting**
+- [x] Integrated **Role Prompting:** for better persona control
+- [x] Used **Analogies** to handle complex technical concepts. 
+
+
 ## How to Run
 1. Ensure `.env` has your `GOOGLE_API_KEY`.
 2. Run `python app.py`.
-
 
 ## Summary Notes
 
@@ -25,3 +30,4 @@ Step 2: Take that summary and convert it into a "5-year-old's explanation" (EL5)
 
 ELI5: Explain Like I'm 5
 
+In a real AI Agent, we can't just hope the LLM gives a good answer. We have to "engineer" the reliability. By adding examples (Few-Shot), we are significantly reducing the chance of a "bad" or "too technical" response. This is called Fidelity Control.
